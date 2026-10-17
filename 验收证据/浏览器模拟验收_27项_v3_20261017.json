@@ -1,0 +1,1945 @@
+{
+  "evidenceType": "MOCK ONLY: intercepted JSON-RPC + injected wallet. No real transaction signed or broadcast.",
+  "baseURL": "http://127.0.0.1:4174",
+  "createdAt": "2026-10-17T08:36:05.599Z",
+  "records": [
+    {
+      "name": "initial local UI renders with MOCK network data",
+      "passed": true,
+      "durationMs": 30,
+      "evidenceType": "MOCK integration"
+    },
+    {
+      "name": "overconfigured gas 42000 -> suggest 21000 -> apply and recheck ok",
+      "passed": true,
+      "durationMs": 294,
+      "evidenceType": "MOCK integration"
+    },
+    {
+      "name": "reasonable 21000 is retained without forced gas change",
+      "passed": true,
+      "durationMs": 166,
+      "evidenceType": "MOCK integration"
+    },
+    {
+      "name": "MOCK scope notice is visible beside the precise gas-only conclusion",
+      "passed": true,
+      "durationMs": 273,
+      "evidenceType": "MOCK integration"
+    },
+    {
+      "name": "invalid hash shows validation error, never chain failure",
+      "passed": true,
+      "durationMs": 34,
+      "evidenceType": "MOCK integration"
+    },
+    {
+      "name": "MOCK success and failed receipts are separately rendered",
+      "passed": true,
+      "durationMs": 643,
+      "evidenceType": "MOCK integration"
+    },
+    {
+      "name": "MOCK null responses are not_found and RPC errors stay query errors",
+      "passed": true,
+      "durationMs": 383,
+      "evidenceType": "MOCK integration"
+    },
+    {
+      "name": "MOCK finalized null preserves execution success and reports unknown finality",
+      "passed": true,
+      "durationMs": 287,
+      "evidenceType": "MOCK integration"
+    },
+    {
+      "name": "MOCK finalized error preserves execution success and reports unknown finality",
+      "passed": true,
+      "durationMs": 99,
+      "evidenceType": "MOCK integration"
+    },
+    {
+      "name": "MOCK inconsistent transaction/receipt prominently warns and hides derived fees",
+      "passed": true,
+      "durationMs": 267,
+      "evidenceType": "MOCK integration"
+    },
+    {
+      "name": "changing preflight inputs clears a previous result and disables send",
+      "passed": true,
+      "durationMs": 85,
+      "evidenceType": "MOCK integration"
+    },
+    {
+      "name": "new hash invalidates stale transaction results, including a late response",
+      "passed": true,
+      "durationMs": 989,
+      "evidenceType": "MOCK integration"
+    },
+    {
+      "name": "MOCK wallet cancellation is not labeled an on-chain failure",
+      "passed": true,
+      "durationMs": 173,
+      "evidenceType": "MOCK integration"
+    },
+    {
+      "name": "wallet chain and account changes invalidate send eligibility",
+      "passed": true,
+      "durationMs": 385,
+      "evidenceType": "MOCK integration"
+    },
+    {
+      "name": "MOCK second-preflight chain change aborts send and visibly invalidates",
+      "passed": true,
+      "durationMs": 150,
+      "evidenceType": "MOCK integration"
+    },
+    {
+      "name": "MOCK second-preflight account change aborts send and visibly invalidates",
+      "passed": true,
+      "durationMs": 352,
+      "evidenceType": "MOCK integration"
+    },
+    {
+      "name": "MOCK second-preflight chain change away and back aborts send and visibly invalidates",
+      "passed": true,
+      "durationMs": 149,
+      "evidenceType": "MOCK integration"
+    },
+    {
+      "name": "MOCK second-preflight account change away and back aborts send and visibly invalidates",
+      "passed": true,
+      "durationMs": 151,
+      "evidenceType": "MOCK integration"
+    },
+    {
+      "name": "MOCK second-preflight programmatic input mutation without event aborts send and visibly invalidates",
+      "passed": true,
+      "durationMs": 149,
+      "evidenceType": "MOCK integration"
+    },
+    {
+      "name": "MOCK second-preflight silent chain change aborts send and visibly invalidates",
+      "passed": true,
+      "durationMs": 150,
+      "evidenceType": "MOCK integration"
+    },
+    {
+      "name": "MOCK second-preflight silent account change aborts send and visibly invalidates",
+      "passed": true,
+      "durationMs": 150,
+      "evidenceType": "MOCK integration"
+    },
+    {
+      "name": "MOCK sent hash absent on target remains unattributed until a later successful lookup",
+      "passed": true,
+      "durationMs": 215,
+      "evidenceType": "MOCK integration"
+    },
+    {
+      "name": "MOCK wallet popup chain change still looks up returned hash without guessing failure",
+      "passed": true,
+      "durationMs": 233,
+      "evidenceType": "MOCK integration"
+    },
+    {
+      "name": "sending records MOCK wallet parameters and queries its MOCK hash only",
+      "passed": true,
+      "durationMs": 150,
+      "evidenceType": "MOCK integration"
+    },
+    {
+      "name": "MOCK offline errors stay visible and UI recovers without a blank page",
+      "passed": true,
+      "durationMs": 333,
+      "evidenceType": "MOCK integration"
+    },
+    {
+      "name": "mobile layout keeps controls within viewport",
+      "passed": true,
+      "durationMs": 55,
+      "evidenceType": "MOCK integration"
+    },
+    {
+      "name": "no uncaught browser JavaScript errors",
+      "passed": true,
+      "durationMs": 1,
+      "evidenceType": "MOCK integration"
+    }
+  ],
+  "pageErrors": [],
+  "blockedRemote": [],
+  "wallet": {
+    "sendCalls": [
+      {
+        "transaction": {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800",
+          "chainId": "0x279f"
+        },
+        "mockOnly": true,
+        "cancelled": true
+      },
+      {
+        "transaction": {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800",
+          "chainId": "0x279f"
+        },
+        "mockOnly": true,
+        "cancelled": false
+      },
+      {
+        "transaction": {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800",
+          "chainId": "0x279f"
+        },
+        "mockOnly": true,
+        "cancelled": false
+      },
+      {
+        "transaction": {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800",
+          "chainId": "0x279f"
+        },
+        "mockOnly": true,
+        "cancelled": false
+      }
+    ],
+    "calls": [
+      {
+        "method": "eth_requestAccounts",
+        "params": []
+      },
+      {
+        "method": "eth_chainId",
+        "params": []
+      },
+      {
+        "method": "eth_accounts",
+        "params": []
+      },
+      {
+        "method": "eth_chainId",
+        "params": []
+      },
+      {
+        "method": "eth_accounts",
+        "params": []
+      },
+      {
+        "method": "eth_chainId",
+        "params": []
+      },
+      {
+        "method": "eth_sendTransaction",
+        "params": [
+          {
+            "from": "0x1111111111111111111111111111111111111111",
+            "to": "0x2222222222222222222222222222222222222222",
+            "value": "0x38d7ea4c68000",
+            "gas": "0x5208",
+            "gasPrice": "0x174876e800",
+            "chainId": "0x279f"
+          }
+        ]
+      },
+      {
+        "method": "eth_accounts",
+        "params": []
+      },
+      {
+        "method": "eth_chainId",
+        "params": []
+      },
+      {
+        "method": "eth_accounts",
+        "params": []
+      },
+      {
+        "method": "eth_chainId",
+        "params": []
+      },
+      {
+        "method": "eth_accounts",
+        "params": []
+      },
+      {
+        "method": "eth_chainId",
+        "params": []
+      },
+      {
+        "method": "eth_accounts",
+        "params": []
+      },
+      {
+        "method": "eth_chainId",
+        "params": []
+      },
+      {
+        "method": "eth_accounts",
+        "params": []
+      },
+      {
+        "method": "eth_chainId",
+        "params": []
+      },
+      {
+        "method": "eth_accounts",
+        "params": []
+      },
+      {
+        "method": "eth_chainId",
+        "params": []
+      },
+      {
+        "method": "eth_accounts",
+        "params": []
+      },
+      {
+        "method": "eth_chainId",
+        "params": []
+      },
+      {
+        "method": "eth_accounts",
+        "params": []
+      },
+      {
+        "method": "eth_chainId",
+        "params": []
+      },
+      {
+        "method": "eth_accounts",
+        "params": []
+      },
+      {
+        "method": "eth_chainId",
+        "params": []
+      },
+      {
+        "method": "eth_accounts",
+        "params": []
+      },
+      {
+        "method": "eth_chainId",
+        "params": []
+      },
+      {
+        "method": "eth_accounts",
+        "params": []
+      },
+      {
+        "method": "eth_chainId",
+        "params": []
+      },
+      {
+        "method": "eth_sendTransaction",
+        "params": [
+          {
+            "from": "0x1111111111111111111111111111111111111111",
+            "to": "0x2222222222222222222222222222222222222222",
+            "value": "0x38d7ea4c68000",
+            "gas": "0x5208",
+            "gasPrice": "0x174876e800",
+            "chainId": "0x279f"
+          }
+        ]
+      },
+      {
+        "method": "eth_accounts",
+        "params": []
+      },
+      {
+        "method": "eth_chainId",
+        "params": []
+      },
+      {
+        "method": "eth_accounts",
+        "params": []
+      },
+      {
+        "method": "eth_chainId",
+        "params": []
+      },
+      {
+        "method": "eth_sendTransaction",
+        "params": [
+          {
+            "from": "0x1111111111111111111111111111111111111111",
+            "to": "0x2222222222222222222222222222222222222222",
+            "value": "0x38d7ea4c68000",
+            "gas": "0x5208",
+            "gasPrice": "0x174876e800",
+            "chainId": "0x279f"
+          }
+        ]
+      },
+      {
+        "method": "eth_accounts",
+        "params": []
+      },
+      {
+        "method": "eth_chainId",
+        "params": []
+      },
+      {
+        "method": "eth_accounts",
+        "params": []
+      },
+      {
+        "method": "eth_chainId",
+        "params": []
+      },
+      {
+        "method": "eth_sendTransaction",
+        "params": [
+          {
+            "from": "0x1111111111111111111111111111111111111111",
+            "to": "0x2222222222222222222222222222222222222222",
+            "value": "0x38d7ea4c68000",
+            "gas": "0x5208",
+            "gasPrice": "0x174876e800",
+            "chainId": "0x279f"
+          }
+        ]
+      }
+    ]
+  },
+  "rpcCalls": [
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_blockNumber",
+      "params": []
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "finalized",
+        false
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      ]
+    },
+    {
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      ]
+    },
+    {
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "finalized",
+        false
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+      ]
+    },
+    {
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0xcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+      ]
+    },
+    {
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0xdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "finalized",
+        false
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "finalized",
+        false
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "finalized",
+        false
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "finalized",
+        false
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "finalized",
+        false
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+      ]
+    },
+    {
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+      ]
+    },
+    {
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+      ]
+    },
+    {
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "finalized",
+        false
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+      ]
+    },
+    {
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+      ]
+    },
+    {
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+      ]
+    },
+    {
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "finalized",
+        false
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": []
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x1111111111111111111111111111111111111111",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0x2222222222222222222222222222222222222222",
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0x1111111111111111111111111111111111111111",
+          "to": "0x2222222222222222222222222222222222222222",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x174876e800"
+        }
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+      ]
+    },
+    {
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+      ]
+    },
+    {
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "finalized",
+        false
+      ]
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_blockNumber",
+      "params": []
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "finalized",
+        false
+      ]
+    }
+  ]
+}

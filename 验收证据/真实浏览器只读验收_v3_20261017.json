@@ -1,0 +1,16 @@
+{
+  "build": "v3.20261017.01",
+  "capturedAt": "2026-10-17T08:36:03.323Z",
+  "url": "http://127.0.0.1:4174/dist/index.html",
+  "realRPC": true,
+  "mocks": false,
+  "walletConnected": false,
+  "newTransactionsSent": 0,
+  "resultText": "✓\n执行成功\n\n当前回执显示执行成功。所在区块已最终确认。\n\n已最终确认\n交易哈希\n0x259c38e33e254e9eb65e64f49e72f9cd421deb01acf7eb108bbc5f9ad096c46b\n区块号\n71,755,949\nFrom\n0xe4acb2f569cacddeaa3154053365ade104ae81ca\nTo\n0xe4acb2f569cacddeaa3154053365ade104ae81ca\n链上 Gas 限额\n21,000\n回执 Gas 用量\n21,000\n有效 Gas 单价\n102,000,000,000 wei / Gas\n按链上限额计算的费用\n0.002142 MON\n最终性依据\nRPC finalized · 高度 71,775,095\n在区块浏览器中核对 ↗\n\n查询时间：2026/10/17 16:36:02 · 数据来自当前 RPC。",
+  "screenshots": [
+    "E:\\GPT本地文件储存\\上海MonadBlitz2026\\BlitzSOS\\BlitzSOS_安全收尾_v3_20261017_1618\\qa\\真实页面验收_v3_20261017_最终版\\BlitzSOS_提交截图_完整页面_v3_20261017.png",
+    "E:\\GPT本地文件储存\\上海MonadBlitz2026\\BlitzSOS\\BlitzSOS_安全收尾_v3_20261017_1618\\qa\\真实页面验收_v3_20261017_最终版\\BlitzSOS_提交截图_费用与真实回执_v3_20261017.png"
+  ],
+  "pageErrors": [],
+  "mobileOverflow": false
+}

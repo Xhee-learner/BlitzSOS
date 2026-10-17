@@ -1,0 +1,18 @@
+{
+  "build": "v3.20261017.01",
+  "status": "succeeded",
+  "accessMode": "public",
+  "projectId": "appgprj_6ad3190156c4819190b7bd5dedaa0f2a",
+  "savedVersionId": "appgprj_6ad3190156c4819190b7bd5dedaa0f2a~appgver_aab7ab9b1aa88191b3fbc912a2d0f263",
+  "deploymentId": "appgdep_6ad3353ee50481919222deea3887897e",
+  "commitSha": "c28fcb681612b9e2630d87e2e1f76fa612b6d0e1",
+  "deployedAt": "2026-10-17T08:44:04.664708+00:00",
+  "url": "https://blitzsos-monad-shanghai-20261017.well-mule-5701.chatgpt.site",
+  "evidence": "Native Sites deployment returned succeeded. Existing public audience preserved.",
+  "automatedPublicBrowserCheck": "Not claimed; earlier automated checks were challenged by Cloudflare.",
+  "ownerCurrentBuildCheck": "Awaiting owner refresh and sample query on the new deployed build.",
+  "ownerEarlierAccessChecks": "Owner confirmed InPrivate page/RPC and phone cellular page/sample before v3 publication.",
+  "contestSubmission": "NOT_SUBMITTED",
+  "backupPublicationByB": "NOT_VERIFIED",
+  "noNewWalletSigningOrBroadcastThisRound": true
+}

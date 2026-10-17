@@ -1,0 +1,10 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# OS / editor junk
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#7152f3">
+<meta name="description" content="BlitzSOS 帮助 Monad 新手在普通 MON 转账前看懂 Gas 配置，在转账后读懂真实执行结果。">
+<title>BlitzSOS · Monad 转账助手</title>
+<link rel="stylesheet" href="styles.css?v=v3.20261017.01">
+<script src="config.js?v=v3.20261017.01" defer></script><script src="js/rpc.js?v=v3.20261017.01" defer></script>
+<script src="js/preflight.js?v=v3.20261017.01" defer></script><script src="js/txstatus.js?v=v3.20261017.01" defer></script>
+<script src="samples.js?v=v3.20261017.01" defer></script><script src="js/app.js?v=v3.20261017.01" defer></script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#top" aria-label="BlitzSOS 首页"><span class="brand-mark" aria-hidden="true">↯</span>Blitz<span>SOS</span></a>
+  <div class="header-actions"><span class="network-pill"><i id="networkDot" class="dot"></i>Monad Testnet</span><button id="connectWallet" class="btn btn-dark">连接钱包</button></div>
+</header>
+<main id="top">
+<section class="hero">
+  <div class="hero-copy"><div class="eyebrow"><span></span> YOUR MONAD TRANSACTION CO-PILOT</div>
+  <h1>每笔转账，<br><em>心里有数。</em></h1>
+  <p>发送前，检查费用配置。<br class="mobile-br">发送后，读懂真实结果。</p>
+  <div class="hero-tags"><span>普通 MON 转账</span><span>真实链上查询</span><span>由你的钱包确认</span></div></div>
+  <div class="hero-art" aria-hidden="true"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="art-chip art-chip-one">GAS LIMIT<span>21,000</span></div><div class="art-core">↯</div><div class="art-chip art-chip-two"><i></i> 更清楚，再出发</div><span class="star star-a">✦</span><span class="star star-b">✦</span></div>
+</section>
+
+<div class="connection-bar"><div><span class="live-label">连接状态</span><span id="networkStatus" role="status">正在连接测试网…</span></div><button id="probeNetwork" class="text-button">重新检查 ↗</button></div>
+
+<section class="workspace" aria-label="转账工具">
+  <article class="panel" id="preflightPanel">
+    <div class="panel-heading"><span class="step">01</span><div><h2>发送前，看懂费用</h2><p>检查配置，再交给钱包确认。</p></div></div>
+    <form id="preflightForm" novalidate>
+      <label for="fromAddress">发送地址 <span>可粘贴地址进行只读检查</span></label>
+      <input id="fromAddress" type="text" autocomplete="off" spellcheck="false" placeholder="0x…" class="mono">
+      <label for="toAddress">收款地址</label>
+      <input id="toAddress" type="text" autocomplete="off" spellcheck="false" placeholder="0x…" class="mono">
+      <div class="input-row"><div><label for="amountMON">转账金额 <span>MON</span></label><input id="amountMON" type="text" inputmode="decimal" value="0.001" autocomplete="off"></div><div><label for="gasLimit">候选 Gas 限额</label><input id="gasLimit" type="text" inputmode="numeric" value="21000" autocomplete="off"></div></div>
+      <div class="inline-tools"><button id="loadReadOnlySample" type="button" class="text-button">填入真实地址样例</button><button id="demoGas" type="button" class="text-button">试试过量配置 ↗</button></div>
+      <p id="sampleNotice" class="note" hidden></p><p id="demoNotice" class="demo-notice" hidden>演示 dApp 的过量配置：用于展示检查过程，不代表钱包普遍浪费费用。</p>
+      <button id="checkTransfer" type="submit" class="btn btn-primary full">检查转账配置 <span>→</span></button>
+    </form>
+    <div id="preflightResult" class="result-zone" role="status" aria-live="polite"><div class="empty-state"><span>⌁</span><p>填入地址，先做一次检查</p><small>只读检查不会发送交易。</small></div></div>
+    <div class="send-actions"><button id="adoptGas" type="button" class="btn btn-soft" hidden>采用建议配置并重新检查</button><button id="sendTransfer" type="button" class="btn btn-dark full" disabled>连接钱包后确认发送</button><p id="walletStatus" class="note" aria-live="polite">发送时由你的钱包确认。预检结果不保证交易一定成功。</p></div>
+    <details class="scope-details"><summary>这次支持哪些转账？</summary><p>仅支持发送方和收款方当前代码均为空、不附加调用数据的原生 MON 转账。合约、代币和智能账户暂不支持。未完整校验 10 MON 储备线与清空例外、近期委托变更及在途交易；预检不保证交易成功。余额展示为查询到的总余额，不统一扣除 10 MON。</p><p>费用对比采用同一参考 Gas 单价，展示预计差额；最终配置与费用以钱包及链上记录为准。</p></details>
+  </article>
+
+  <article class="panel" id="transactionPanel">
+    <div class="panel-heading"><span class="step step-mint">02</span><div><h2>发送后，看懂结果</h2><p>用交易哈希，找到下一步。</p></div></div>
+    <form id="txForm" novalidate><label for="txHash">交易哈希 <span>Monad Testnet</span></label><input id="txHash" type="text" autocomplete="off" spellcheck="false" placeholder="0x 开头的 64 位交易哈希" class="mono"><button id="queryTransaction" type="submit" class="btn btn-dark full">查询交易结果 <span>↗</span></button></form>
+    <div class="query-tools"><button id="useSampleTx" class="text-button" type="button">查询一笔真实样例</button><button id="refreshTx" class="text-button" type="button" disabled>重新查询 ↻</button></div>
+    <div id="txError" role="alert" hidden></div>
+    <div id="txResult" class="result-zone tx-zone" role="status" aria-live="polite"><div class="empty-state"><span>✓</span><p>不用猜它成功了没有</p><small>执行结果、确认状态和查询错误，分别说清。</small></div></div>
+    <div class="insight"><span class="insight-icon">i</span><div><strong>有哈希，也要看结果</strong><p>交易提交不等于执行成功。暂时查不到，也不等于交易失败。</p></div></div>
+  </article>
+</section>
+<section class="how-it-works"><div><span>01 / CHECK</span><h3>先检查配置</h3><p>把不确定的费用，变成可读的比较。</p></div><div><span>02 / CONFIRM</span><h3>在钱包里确认</h3><p>收款地址、金额与费用，由你决定。</p></div><div><span>03 / UNDERSTAND</span><h3>看清真实结果</h3><p>根据链上回执，找到下一步。</p></div></section>
+<details class="connection-details"><summary>网络与数据来源</summary><p>目标网络：Monad Testnet · Chain ID 10143（0x279f）</p><p>RPC：<code id="rpcLabel"></code></p><p id="probeDetail">尚未完成网络检查。</p><p>当前展示均由请求时的公开 RPC 数据计算。样例地址和交易来自公开链上记录；样例预填不会自动连接钱包或发送交易。</p></details>
+</main>
+<footer><a class="brand brand-footer" href="#top">Blitz<span>SOS</span></a><span>Built for Monad Blitz · Shanghai 2026 · <span class="build-version">Build v3.20261017.01</span></span><div><a href="https://docs.monad.xyz/developer-essentials/gas-pricing" target="_blank" rel="noopener noreferrer">计费依据 ↗</a><a href="https://skills.devnads.com" target="_blank" rel="noopener noreferrer">MONSKILLS ↗</a></div></footer>
+</body></html>

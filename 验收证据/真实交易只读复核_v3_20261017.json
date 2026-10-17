@@ -1,0 +1,383 @@
+{
+  "build": "v3.20261017.01",
+  "capturedAt": "2026-10-17T08:28:41.058Z",
+  "evidenceType": "READ-ONLY live RPC verification of an earlier owner-confirmed transaction. No new signing or broadcast.",
+  "result": {
+    "hash": "0x259c38e33e254e9eb65e64f49e72f9cd421deb01acf7eb108bbc5f9ad096c46b",
+    "state": "success",
+    "title": "执行成功",
+    "message": "当前回执显示执行成功。所在区块已最终确认。",
+    "tx": {
+      "type": "0x2",
+      "chainId": "0x279f",
+      "nonce": "0x4",
+      "gas": "0x5208",
+      "maxFeePerGas": "0x17bfac7c00",
+      "maxPriorityFeePerGas": "0x17bfac7c00",
+      "to": "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+      "value": "0x38d7ea4c68000",
+      "accessList": [],
+      "input": "0x",
+      "r": "0x47697b47de4aab3b95fe52498b4a2bae2614f0a9bc5142225898d801376f4a90",
+      "s": "0x368525d1757b149f8960b1188e59e06ab418b5d1b3a286d99f8400fc8e84379b",
+      "yParity": "0x1",
+      "v": "0x1",
+      "hash": "0x259c38e33e254e9eb65e64f49e72f9cd421deb01acf7eb108bbc5f9ad096c46b",
+      "blockHash": "0xd5b20fa31abb5c385392eb3896b2be97b824d7402984e9a2f7ead6dee434a89c",
+      "blockNumber": "0x446e8ad",
+      "transactionIndex": "0x2",
+      "from": "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+      "gasPrice": "0x17bfac7c00",
+      "blockTimestamp": "0x6ad31cdd"
+    },
+    "receipt": {
+      "type": "0x2",
+      "status": "0x1",
+      "cumulativeGasUsed": "0x21b83",
+      "logs": [],
+      "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "transactionHash": "0x259c38e33e254e9eb65e64f49e72f9cd421deb01acf7eb108bbc5f9ad096c46b",
+      "transactionIndex": "0x2",
+      "blockHash": "0xd5b20fa31abb5c385392eb3896b2be97b824d7402984e9a2f7ead6dee434a89c",
+      "blockNumber": "0x446e8ad",
+      "gasUsed": "0x5208",
+      "effectiveGasPrice": "0x17bfac7c00",
+      "from": "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+      "to": "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+      "contractAddress": null
+    },
+    "finality": "finalized",
+    "finalitySource": "rpc_finalized_tag",
+    "finalizedBlockNumber": "71773628",
+    "consistency": "consistent",
+    "feeWei": "2142000000000000",
+    "feeBasis": "gas_limit",
+    "explorerUrl": "https://testnet.monadscan.com/tx/0x259c38e33e254e9eb65e64f49e72f9cd421deb01acf7eb108bbc5f9ad096c46b",
+    "warnings": []
+  },
+  "preflightChecks": [
+    {
+      "state": "ok",
+      "title": "Gas 配置无需下调",
+      "message": "本次地址当前代码、总余额及 RPC 估算检查通过，21,000 Gas 无需下调；这不代表完整验证交易可执行。请在钱包中再次确认收款地址、金额、网络及最终费用。",
+      "from": "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+      "to": "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+      "valueWei": "1000000000000000",
+      "balanceWei": "104577130267670000000",
+      "gasPriceWei": "102000000000",
+      "candidateGasLimit": "21000",
+      "suggestedGasLimit": "21000",
+      "estimateGas": "21000",
+      "candidateFeeWei": "2142000000000000",
+      "suggestedFeeWei": "2142000000000000",
+      "differenceWei": "0",
+      "canSend": true,
+      "checkedAt": "2026-10-17T08:28:40.458Z",
+      "transaction": {
+        "from": "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+        "to": "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+        "value": "0x38d7ea4c68000",
+        "gas": "0x5208",
+        "gasPrice": "0x17bfac7c00",
+        "chainId": "0x279f"
+      },
+      "scopeNotice": "仅检查普通 MON 转账的 Gas 配置；未完整校验 10 MON 储备线与清空例外、近期委托变更及在途交易。预检不保证交易成功。",
+      "warnings": [
+        "仅适用于发送方和收款方当前代码均为空、不含调用数据的原生 MON 转账；未完整判断近期委托变更。",
+        "余额是 RPC 返回的总余额；不减去固定 10 MON，也不判断充值成熟度。",
+        "费用按同一次查询的 Gas 单价比较；实际发送由钱包确认，预检不保证上链或成功。",
+        "地址只做格式校验，不校验大小写校验和；请再次核对收款地址。"
+      ]
+    },
+    {
+      "state": "high",
+      "title": "当前 Gas limit 高于普通转账所需",
+      "message": "按同一 Gas 单价比较，可采用 21,000 Gas 后重新检查；这不是已经实现的节省金额。",
+      "from": "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+      "to": "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+      "valueWei": "1000000000000000",
+      "balanceWei": "104577130267670000000",
+      "gasPriceWei": "102000000000",
+      "candidateGasLimit": "42000",
+      "suggestedGasLimit": "21000",
+      "estimateGas": "21000",
+      "candidateFeeWei": "4284000000000000",
+      "suggestedFeeWei": "2142000000000000",
+      "differenceWei": "2142000000000000",
+      "canSend": false,
+      "checkedAt": "2026-10-17T08:28:40.840Z",
+      "transaction": {
+        "from": "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+        "to": "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+        "value": "0x38d7ea4c68000",
+        "gas": "0xa410",
+        "gasPrice": "0x17bfac7c00",
+        "chainId": "0x279f"
+      },
+      "scopeNotice": "仅检查普通 MON 转账的 Gas 配置；未完整校验 10 MON 储备线与清空例外、近期委托变更及在途交易。预检不保证交易成功。",
+      "warnings": [
+        "仅适用于发送方和收款方当前代码均为空、不含调用数据的原生 MON 转账；未完整判断近期委托变更。",
+        "余额是 RPC 返回的总余额；不减去固定 10 MON，也不判断充值成熟度。",
+        "费用按同一次查询的 Gas 单价比较；实际发送由钱包确认，预检不保证上链或成功。",
+        "地址只做格式校验，不校验大小写校验和；请再次核对收款地址。"
+      ]
+    },
+    {
+      "state": "too_low",
+      "title": "Gas limit 低于普通转账要求",
+      "message": "当前配置低于 21,000 Gas，不能发送。请采用建议值后重新检查。",
+      "from": "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+      "to": "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+      "valueWei": "1000000000000000",
+      "balanceWei": "104577130267670000000",
+      "gasPriceWei": "102000000000",
+      "candidateGasLimit": "20000",
+      "suggestedGasLimit": "21000",
+      "estimateGas": null,
+      "candidateFeeWei": "2040000000000000",
+      "suggestedFeeWei": "2142000000000000",
+      "differenceWei": "-102000000000000",
+      "canSend": false,
+      "checkedAt": "2026-10-17T08:28:41.058Z",
+      "transaction": {
+        "from": "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+        "to": "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+        "value": "0x38d7ea4c68000",
+        "gas": "0x4e20",
+        "gasPrice": "0x17bfac7c00",
+        "chainId": "0x279f"
+      },
+      "scopeNotice": "仅检查普通 MON 转账的 Gas 配置；未完整校验 10 MON 储备线与清空例外、近期委托变更及在途交易。预检不保证交易成功。",
+      "warnings": [
+        "仅适用于发送方和收款方当前代码均为空、不含调用数据的原生 MON 转账；未完整判断近期委托变更。",
+        "余额是 RPC 返回的总余额；不减去固定 10 MON，也不判断充值成熟度。",
+        "费用按同一次查询的 Gas 单价比较；实际发送由钱包确认，预检不保证上链或成功。",
+        "地址只做格式校验，不校验大小写校验和；请再次核对收款地址。"
+      ]
+    }
+  ],
+  "rpcResponses": [
+    {
+      "method": "eth_chainId",
+      "params": [],
+      "result": "0x279f"
+    },
+    {
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x259c38e33e254e9eb65e64f49e72f9cd421deb01acf7eb108bbc5f9ad096c46b"
+      ],
+      "result": {
+        "type": "0x2",
+        "status": "0x1",
+        "cumulativeGasUsed": "0x21b83",
+        "logs": [],
+        "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "transactionHash": "0x259c38e33e254e9eb65e64f49e72f9cd421deb01acf7eb108bbc5f9ad096c46b",
+        "transactionIndex": "0x2",
+        "blockHash": "0xd5b20fa31abb5c385392eb3896b2be97b824d7402984e9a2f7ead6dee434a89c",
+        "blockNumber": "0x446e8ad",
+        "gasUsed": "0x5208",
+        "effectiveGasPrice": "0x17bfac7c00",
+        "from": "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+        "to": "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+        "contractAddress": null
+      }
+    },
+    {
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0x259c38e33e254e9eb65e64f49e72f9cd421deb01acf7eb108bbc5f9ad096c46b"
+      ],
+      "result": {
+        "type": "0x2",
+        "chainId": "0x279f",
+        "nonce": "0x4",
+        "gas": "0x5208",
+        "maxFeePerGas": "0x17bfac7c00",
+        "maxPriorityFeePerGas": "0x17bfac7c00",
+        "to": "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+        "value": "0x38d7ea4c68000",
+        "accessList": [],
+        "input": "0x",
+        "r": "0x47697b47de4aab3b95fe52498b4a2bae2614f0a9bc5142225898d801376f4a90",
+        "s": "0x368525d1757b149f8960b1188e59e06ab418b5d1b3a286d99f8400fc8e84379b",
+        "yParity": "0x1",
+        "v": "0x1",
+        "hash": "0x259c38e33e254e9eb65e64f49e72f9cd421deb01acf7eb108bbc5f9ad096c46b",
+        "blockHash": "0xd5b20fa31abb5c385392eb3896b2be97b824d7402984e9a2f7ead6dee434a89c",
+        "blockNumber": "0x446e8ad",
+        "transactionIndex": "0x2",
+        "from": "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+        "gasPrice": "0x17bfac7c00",
+        "blockTimestamp": "0x6ad31cdd"
+      }
+    },
+    {
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "finalized",
+        false
+      ],
+      "result": {
+        "baseFeePerGas": "0x174876e800",
+        "blobGasUsed": "0x0",
+        "difficulty": "0x0",
+        "excessBlobGas": "0x0",
+        "extraData": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "gasLimit": "0x8f0d180",
+        "gasUsed": "0x6f4f",
+        "hash": "0xd2e5077ef89db418e5d97bfa36f30ea9579bbe7b5a646134de579f4a9c49d398",
+        "logsBloom": "0x00000000000000000000001000000000000200000000000000000000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000002000000000008000000000000000000000000020000000000000000000000000000000000000010000000000000000000000000000000000004000000000000000000400000000000000000000000000000000000000000000000000404000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000",
+        "miner": "0x19d43cd0679e1761cf788d4610a944fda020f591",
+        "mixHash": "0xa70e12512f8559f4d2561893ad0432709c13c0db3a16b4cf2fe582a9296117dc",
+        "nonce": "0x0000000000000000",
+        "number": "0x4472dbc",
+        "parentBeaconBlockRoot": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "parentHash": "0x9d1e8334fd625c0b0ff0fa6bf07c6b6f6c036fe2e85999675ce654947b5a4aa5",
+        "receiptsRoot": "0x87f9b7831b8226c524263857c9651078ab22f966117e6922b439c1bc808049ec",
+        "requestsHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "sha3Uncles": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+        "size": "0x320",
+        "stateRoot": "0x7f2dc1c7eef8b4013789da834fadf4b437f20deeaef10736a06bb2330067012f",
+        "timestamp": "0x6ad331b8",
+        "totalDifficulty": "0x0",
+        "transactions": [
+          "0x252976f045c6b51f5b86155efd8b4cb2dfa12a193d7c2b3e9007a90256222fa5",
+          "0x8f1b31a183f35bb9a3d03da883bebcb2a6b72c0ae8865fae27393ae6fde4c6f5"
+        ],
+        "transactionsRoot": "0xdce00039533eade669ac172ceda16408561fb09452d43ed008424d0b0f9b10bc",
+        "uncles": [],
+        "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421"
+      }
+    },
+    {
+      "method": "eth_chainId",
+      "params": [],
+      "result": "0x279f"
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+        "latest"
+      ],
+      "result": "0x5ab4c99e7b238b180"
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": [],
+      "result": "0x17bfac7c00"
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+        "latest"
+      ],
+      "result": "0x"
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+        "latest"
+      ],
+      "result": "0x"
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+          "to": "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x17bfac7c00"
+        }
+      ],
+      "result": "0x5208"
+    },
+    {
+      "method": "eth_chainId",
+      "params": [],
+      "result": "0x279f"
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+        "latest"
+      ],
+      "result": "0x"
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+        "latest"
+      ],
+      "result": "0x"
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": [],
+      "result": "0x17bfac7c00"
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+        "latest"
+      ],
+      "result": "0x5ab4c99e7b238b180"
+    },
+    {
+      "method": "eth_estimateGas",
+      "params": [
+        {
+          "from": "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+          "to": "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+          "value": "0x38d7ea4c68000",
+          "gas": "0x5208",
+          "gasPrice": "0x17bfac7c00"
+        }
+      ],
+      "result": "0x5208"
+    },
+    {
+      "method": "eth_chainId",
+      "params": [],
+      "result": "0x279f"
+    },
+    {
+      "method": "eth_gasPrice",
+      "params": [],
+      "result": "0x17bfac7c00"
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+        "latest"
+      ],
+      "result": "0x"
+    },
+    {
+      "method": "eth_getBalance",
+      "params": [
+        "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+        "latest"
+      ],
+      "result": "0x5ab4c99e7b238b180"
+    },
+    {
+      "method": "eth_getCode",
+      "params": [
+        "0xe4acb2f569cacddeaa3154053365ade104ae81ca",
+        "latest"
+      ],
+      "result": "0x"
+    }
+  ]
+}
